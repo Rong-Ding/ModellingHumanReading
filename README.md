@@ -1,3 +1,4 @@
+## 📖 Modelling Human Reading
 This repository contains scripts for the two Python-based modelling projects (Assignments 1 and 2), where **semantic models** (_Word2Vec_) and **recurrent neural networks** (that is, simple recurrent networks (SRNs) and long-short-term memory (LSTM) models) were trained to simulate and interpret human reading.
 
 ### Assignment 1: Semantic models (Word2Vec) in handling word semantics
