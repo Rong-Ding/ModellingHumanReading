@@ -1,8 +1,14 @@
-This repository contains scripts and reports for the two Python-based modelling projects (Assignments 1 and 2), where semantic models (Word2Vec) and recurrent neural networks (that is, simple recurrent networks (SRNs) and long-short-term memory (LSTM) models) were trained to simulate and interpret human reading.
+This repository contains scripts and reports for the two Python-based modelling projects (Assignments 1 and 2), where **semantic models** (_Word2Vec_) and **recurrent neural networks** (that is, simple recurrent networks (SRNs) and long-short-term memory (LSTM) models) were trained to simulate and interpret human reading.
 
-### Assignment 1 
-collaborating with one other fellow student, I trained Word2Vec models on a large English corpus (ENCOW), varying parameters _size_ and _window_. The aim was to test the Word2Vec model's ability to predict humans' word categorisation, naming and reading time. Findings show that distributional word
-vectors from Word2Vec capture well the semantic properties of words from human data.
+### Assignment 1: Semantic models (Word2Vec) in handling word semantics
+- Training: CBOW _Word2Vec_ models on a large English corpus (ENCOW) with 16 billion words; _hidden layer size_ and _context window_ varied
+- Testing: The models' ability to predict humans' semantics-based word processing (categorisation and semantic priming)
+- Findings:
+  - Distributional word vectors from Word2Vec generally capture well word semantics used by humans.
+  - The bigger the hidden layer size, the better a Word2Vec model predicts human word processing.
+  - However, models with a smaller context window size tend to predict human behaviour better, indicating limited working memory capacity in word processing
+
+### Assignment 2: SRN vs LSTM in handling 
 
 In the second project (Assignment 2), I trained simple and gated recurrent neural networks, namely SRN and long-short-term memory (LSTM), on a large English language corpus containing more than 8.7 million words, and tested 1) how well they captured the statistical structure of language, as well as 2) how well they predicted human reading performance. Results show that gated recurrent neural networks such as LSTM generally performed better in characterising the statistical structure of language and also the reading performance in humans.
 
