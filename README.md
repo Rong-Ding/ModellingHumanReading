@@ -9,14 +9,13 @@ This repository contains scripts and reports for the two Python-based modelling 
   - However, models with a smaller context window size tend to predict human behaviour better, indicating limited working memory capacity in word processing
 
 ### Assignment 2: SRN vs LSTM in characterising the statistical structure of language and syntactic ambiguity (garden-path sentences)
-- Training: SRN vs LSTM models on a large English corpus (ENCOW) with 16 billion words; _hidden layer size_ and _context window_ varied
-- Testing: The models' ability to predict humans' semantics-based word processing (categorisation and semantic priming)
+- Training: SRN vs LSTM models on a large English corpus with 8.7 billion words; _training data size_ varied
+- Testing: The models' ability to characterise language statistics (_perplexity_) and predict human performance (_sensitivity to syntactic ambiguity_)
 - Findings:
-  - Distributional word vectors from Word2Vec generally capture well word semantics used by humans.
-  - The bigger the hidden layer size, the better a Word2Vec model predicts human word processing.
-  - However, models with a smaller context window size tend to predict human behaviour better, indicating limited working memory capacity in word processing
+  - With big training sizes, SRN and LSTM give almost equally low perplexity, meaning that they both capture well the statistical structure of language.
+  - However, LSTMs show higher sensitivity to syntactically ambiguous sentences than SRNs do.
+  - Characterising linguistic statistics well therefore does not necessarily indicate good prediction of human sentence processing.
 
-In the second project (Assignment 2), I trained simple and gated recurrent neural networks, namely SRN and long-short-term memory (LSTM), on a large English language corpus containing more than 8.7 million words, and tested 1) how well they captured the statistical structure of language, as well as 2) how well they predicted human reading performance. Results show that gated recurrent neural networks such as LSTM generally performed better in characterising the statistical structure of language and also the reading performance in humans.
 
 ## Explanation
 The repository consists of two subfolders, containing the scripts and a resulting report for each project respectively. 
