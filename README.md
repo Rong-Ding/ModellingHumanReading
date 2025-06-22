@@ -19,3 +19,5 @@ This repository contains scripts for the two Python-based modelling projects (As
   - With big training sizes, SRN and LSTM give almost equally low perplexity, meaning that they both capture well the statistical structure of language.
   - However, LSTMs show higher sensitivity to syntactically ambiguous sentences than SRNs do.
   - Characterising linguistic statistics well therefore does not necessarily indicate good prediction of human sentence processing.
+
+## How to Use / Reproduce
