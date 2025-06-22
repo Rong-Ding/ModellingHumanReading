@@ -3,6 +3,7 @@ This repository contains scripts for the two Python-based modelling projects (As
 
 **Impact**: Modelling how humans process and interpret language provides valuable insights into **neuro-cognitive behaviour**. This could help **neuropsychologists** better understand language processing impairments, such as in aphasia or autism spectrum disorders. In practical applications, understanding human reading performance via modelling improves **language learning technologies** (e.g., Duolingo, Babbel), by making them more tailored as **adaptive learning systems** to real cognitive patterns.
 
+## Key Analyses and Findings
 ### Assignment 1: Semantic models (Word2Vec) in handling word semantics
 - Training: **CBOW Word2Vec models** on a large English corpus (ENCOW) with **16 billion words**; _hidden layer size_ and _context window_ varied
 - Testing: The models' ability to predict humans' semantics-based word processing (categorisation and semantic priming)
