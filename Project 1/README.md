@@ -8,3 +8,6 @@ The current project aims to examine how well semantic models, that is _Word2Vec_
   - However, models with a smaller context window size tend to predict human behaviour better, indicating limited working memory capacity in word processing
 
 ## How to Use / Reproduce
+1. Follow the script in the folder Model_Training to train and save Word2Vec models (the training corpus, unfortunately, is not available online due to its big size; may be available upon request)
+2. Follow the scripts and data files in the folder Data_Preprocessing, where saved Word2Vec models are also used to compute surprisal values; analysis-ready datafiles are saved
+3. Analyse data and compute the measure (Goodness-of-fit) using the scripts in Measure_Computation_Analyses
