@@ -10,7 +10,7 @@ This repository contains scripts for the two Python-based modelling projects (Pr
 -  Together, these findings highlight the importance of aligning computational models not just with linguistic data, but also with **psycholinguistic phenomena**
 
 ## Overview of Analyses and Findings
-### Assignment 1: Semantic models (Word2Vec) in handling word semantics
+### Project 1: Semantic models (Word2Vec) in handling word semantics
 - Training: **CBOW Word2Vec models** on a large English corpus (ENCOW) with **16 billion words**; _hidden layer size_ and _context window_ varied
 - Testing: The models' ability to predict humans' semantics-based word processing (categorisation and semantic priming)
 - Findings:
@@ -18,7 +18,7 @@ This repository contains scripts for the two Python-based modelling projects (Pr
   - The bigger the hidden layer size, the better a Word2Vec model predicts human word processing.
   - However, models with a smaller context window size tend to predict human behaviour better, indicating limited **working memory capacity** in human word processing
 
-### Assignment 2: SRN vs LSTM in characterising the statistical structure of language and syntactic ambiguity (garden-path sentences)
+### Project 2: SRN vs LSTM in characterising the statistical structure of language and syntactic ambiguity (garden-path sentences)
 - Training: **SRN vs LSTM models** on a large English corpus with 8.7 billion words; _training data size_ varied
 - Testing: The models' ability to characterise language statistics (_perplexity_) and predict human performance (_sensitivity to syntactic ambiguity_)
 - Findings:
