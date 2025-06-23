@@ -1,4 +1,4 @@
-## Assignment 1
+## Project 1
 The current project aims to examine how well semantic models, that is _Word2Vec_, handle word semantics
 - Training: CBOW Word2Vec models on a large English corpus (ENCOW) with 16 billion words; _hidden layer size_ and _context window_ varied
 - Testing: The models' ability to predict humans' semantics-based word processing (categorisation and semantic priming)
