@@ -7,19 +7,8 @@ The current project aims at comparing SRN vs LSTM in characterising the statisti
   - However, LSTMs show higher sensitivity to syntactically ambiguous sentences than SRNs do.
   - Characterising linguistic statistics well, therefore, does not necessarily indicate good prediction of human sentence processing.
 
-## Explanation per file:
-
-<b>Datafile_building_Part1.ipynb & Datafile_building_Part2.ipynb:</b>\
-These scripts transform outputs of the trained SRN and LSTM models for stats analyses.
-
-<b>Test set selection.ipynb & Sentence selection_Part 2.ipynb:</b>\
-These scripts select test sets by filtering whether a sentence stimulus contains any vocabulary that is not in the trained models.
-
-<b>GoodnessofFit_Plotting.ipynb & Perplexity computation & plotting.ipynb:</b>\
-Result plotting for the report, characterising the model fit of the statistical structure of language.
-
-<b>rt_surp_LMER.R:</b>\
-This script conducts linear mixed-effects models on human reading pace data, including measures generated from trained recurrent models as a predictor and other variables as control.
-
-<b>surp_amb_fit_LMER.R:</b>\
-This script conducts two-way ANOVAs on the models' prediction on reading performance.
+## How to Use / Reproduce
+1. Follow the script in the subfolder _Test_set_selection_ to build and save a set of test stimuli for models
+2. Train the model with the data in the subfolder _Model_Training_Surprisal_, and compute surprisal for chosen stimuli (both with one single script _get_surp.py_ under the same subfolder)
+3. Build preprocessed data files for stats analyses using the script in the subfolder _Datafile_Building_
+4. Use the scripts in the subfolder _Analyses_ to conduct data analyses on the files saved from data file building
