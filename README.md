@@ -1,9 +1,15 @@
 ## 📖 Modelling Human Reading
-This repository contains scripts for the two Python-based modelling projects (Assignments 1 and 2), where **semantic models** (_Word2Vec_) and **recurrent neural networks** (that is, simple recurrent networks (SRNs) and long-short-term memory (LSTM) models) were trained to simulate and interpret human reading. 
+This repository contains scripts for the two Python-based modelling projects (Projects 1 and 2), where **semantic models** (_Word2Vec_) and **recurrent neural networks** (that is, simple recurrent networks (SRNs) and long-short-term memory (LSTM) models) were trained to simulate and interpret human reading. 
 
 **Impact**: Modelling how humans process and interpret language provides valuable insights into **neuro-cognitive behaviour**. This could help **neuropsychologists** better understand language processing impairments, such as in aphasia or autism spectrum disorders. In practical applications, understanding human reading performance via modelling improves **language learning technologies** (e.g., Duolingo, Babbel), by making them more tailored as **adaptive learning systems** to real cognitive patterns.
 
-## Key Analyses and Findings
+## Key Conclusions
+- **Word2Vec models** effectively capture human-like word semantics, especially with larger hidden layers and smaller context windows, mirroring cognitive constraints like limited working memory
+- **LSTMs outperform SRNs** in modeling human sensitivity to syntactic ambiguity, despite similar performance in capturing general language statistics (perplexity)
+- **Lower perplexity ≠ better cognitive modeling**: statistical accuracy alone is insufficient for predicting human-like language behaviour
+-  Together, these findings highlight the importance of aligning computational models not just with linguistic data, but also with **psycholinguistic phenomena**
+
+## Overview of Analyses and Findings
 ### Assignment 1: Semantic models (Word2Vec) in handling word semantics
 - Training: **CBOW Word2Vec models** on a large English corpus (ENCOW) with **16 billion words**; _hidden layer size_ and _context window_ varied
 - Testing: The models' ability to predict humans' semantics-based word processing (categorisation and semantic priming)
@@ -20,4 +26,3 @@ This repository contains scripts for the two Python-based modelling projects (As
   - However, LSTMs show higher sensitivity to syntactically ambiguous sentences than SRNs do.
   - Characterising linguistic statistics well therefore does not necessarily indicate good prediction of human sentence processing.
 
-## How to Use / Reproduce
