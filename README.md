@@ -19,10 +19,10 @@ This repository contains scripts for the two Python-based modelling projects (Pr
   - However, models with a smaller context window size tend to predict human behaviour better, indicating limited **working memory capacity** in human word processing
 
 ### Assignment 2: SRN vs LSTM in characterising the statistical structure of language and syntactic ambiguity (garden-path sentences)
-- Training: SRN vs LSTM models on a large English corpus with 8.7 billion words; _training data size_ varied
+- Training: **SRN vs LSTM models** on a large English corpus with 8.7 billion words; _training data size_ varied
 - Testing: The models' ability to characterise language statistics (_perplexity_) and predict human performance (_sensitivity to syntactic ambiguity_)
 - Findings:
-  - With big training sizes, SRN and LSTM give almost equally low perplexity, meaning that they both capture well the statistical structure of language.
-  - However, LSTMs show higher sensitivity to syntactically ambiguous sentences than SRNs do.
+  - With big training sizes, SRN and LSTM give almost equally low perplexity, meaning that they both capture well the **statistical structure of language**.
+  - However, **LSTMs show higher sensitivity** to syntactically ambiguous sentences than SRNs do.
   - Characterising linguistic statistics well therefore does not necessarily indicate good prediction of human sentence processing.
 
